@@ -17,6 +17,8 @@ Get on the as2point20.slack.com Slack channel.
 
 ## Up and running
 
+**NOTE: Because Dave is running an old OS, we had to change some standard things in this repository. If you are not Dave,**  `mv package-example.json package.json`.
+
 1. Get Tower.app set up and clone the repositiory. (I'll show you how to do this.)
 2. Open Terminal.app and go to the project directory, something like `cd ~/Documents/Projects/as220-all-access` _(Adjust the file path to where you cloned the repository in Tower.app)_.
 3. Install Grunt, `npm install -g grunt-cli`, and `npm install -g grunt` _(Note: we had to install this globally with sudo to get things working on Dave's old Mac OS.)_
