@@ -1,0 +1,36 @@
+.debug {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.75em;
+  color: red;
+  background: pink;
+}
+@include mobile {
+  .debug-mobile {
+    color: green;
+    background: lightgreen;
+  }
+}
+@include tablet {
+  .debug-tablet {
+    color: green;
+    background: lightgreen;
+  }
+}
+@include desktop {
+  .debug-desktop {
+    color: green;
+    background: lightgreen;
+  }
+}
+@include widescreen {
+  .debug-widescreen {
+    color: green;
+    background: lightgreen;
+  }
+}
+
+
+.foo {
+  border: 1px solid red !important;
+}

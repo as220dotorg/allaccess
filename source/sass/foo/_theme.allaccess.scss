@@ -1,0 +1,44 @@
+ol.aa-dots,
+ul.aa-dots {
+  display: block;
+  margin-left: 0;
+  padding: 0 0 0 42px;
+  list-style: none;
+  counter-reset: numList;
+  li {
+    display: block;
+    position: relative;
+  }
+  li + li {
+    margin-top: 1.4em;
+  }
+  li:before {
+      // counter-increment: numList;
+      // content: counter(numList);
+      position: absolute;
+      left: -42px;
+      transform: translateY(-8px);
+      font: bold 16px sans-serif;
+      text-align: center;
+      color: #fff;
+      line-height: 36px;
+      width: 36px;
+      height: 36px;
+      background: $berry;
+      -moz-border-radius: 999px;
+      border-radius: 999px
+  }
+}
+
+ol.aa-dots {
+  li:before {
+    counter-increment: numList;
+    content: counter(numList);
+  }
+}
+
+ul.aa-dots {
+  li:before {
+    content: '';
+  }
+}

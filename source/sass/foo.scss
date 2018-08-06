@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+// Global Variables
+//
+// Custom overrides of `bulma/utilities/initial-variables.sass`.
+//
+// Weight: 1
+//
+// Styleguide: Base.Variables
+
+@import "foo/variables";
+
+
+// Vendor imports
+
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/fa-solid";
+@import "vendor/fontawesome/fa-regular";
+@import "vendor/fontawesome/fa-brands";
+@import "vendor/slick/slick";
+@import "vendor/bulma/bulma";
+@import "vendor/bulma-calendar/bulma-calendar";
+
+
+
+// Base
+//
+// Styling for basic HTML block and inline elements.
+//
+// Weight: 2
+//
+// Styleguide: Base
+
+@import "foo/base.typography";
+@import "foo/base.figure";
+
+
+// Layout
+//
+// Styling that determines the position of content on the page.
+//
+// Weight: 3
+//
+// Styleguide: Layout
+
+@import "foo/layout.flow";
+
+
+// Component
+//
+// Custom structures.
+//
+// Weight: 4
+//
+// Styleguide: Component
+
+@import "foo/component.navbar";
+@import "foo/component.subnav";
+@import "foo/component.footer";
+@import "foo/component.titleblock";
+@import "foo/component.promotion";
+@import "foo/component.calendar";
+@import "foo/component.folio";
+@import "foo/component.carousel";
+@import "foo/component.hero";
+@import "foo/component.donate-form";
+@import "foo/debug";
+
+
+// Theme
+//
+// Custom structures.
+//
+// Weight: 5
+//
+// Styleguide: Theme
+
+@import "foo/theme.allaccess";
+
+
+// Design
+//
+// These design samples are build from the same Twig templates
+// as the examples in the documentation. Each header links to
+// a full-screen preview of the layout.
+//
+// Weight: 6
+//
+// Styleguide: Design

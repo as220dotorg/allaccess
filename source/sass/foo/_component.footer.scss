@@ -1,0 +1,54 @@
+// Footer
+//
+// ...
+//
+// Weight: 1
+//
+// Styleguide: Component.Footer
+
+.footer {
+  position: relative;
+  border-top: 6px solid $gray-light;
+}
+
+.footer.container {
+  padding: 4em 0 3em 0;
+}
+
+.footer .columns > .column {
+  padding-bottom: 1em;
+}
+
+.footer a {
+  color: currentColor;
+  &:hover {
+    color: $berry;
+  }
+}
+
+.footer p.title {
+  margin-bottom: 0.25em;
+}
+
+.footer .copyright {
+  position: absolute;
+  left: 0;
+  top: 1em;
+  font-size: 0.75em;
+  color: $gray-medium;
+}
+
+.footer .social-links {
+  font-size: 1.25em;
+  li + li {
+    margin-left: 0.5em;
+  }
+}
+
+.donate-form + .section {
+  margin-top: 0;
+  padding-top: 0;
+  .footer {
+    border-top: 0;
+  }
+}

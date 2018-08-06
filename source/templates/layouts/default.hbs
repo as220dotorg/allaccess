@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>{{title}} | {{site.title}}</title>
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/apple-touch-icon-72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/apple-touch-icon-114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/apple-touch-icon-144.png" />
+<link rel="shortcut icon" href="./img/faveicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="./css/foo.css">
+<style media="screen">
+{{ pagestyle }}
+</style>
+</head>
+<body>
+
+{{> header }}
+
+{{#if hero includeZero=true}}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <img src="img/{{hero}}" alt="{{title}}">
+    </div>
+  </div>
+</section>
+{{/if}}
+
+<section class="section">
+  <div role="main" class="main container content">
+    {{#markdown}}
+        {{> body }}
+    {{/markdown}}
+  </div>
+</section>
+
+{{> donate-form }}
+
+{{> footer }}
+
+</body>
+</html>

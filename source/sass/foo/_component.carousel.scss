@@ -1,0 +1,133 @@
+// Carousel
+//
+// Customize Bulma promotion component:
+//
+// Weight: 2
+//
+// Styleguide: Component.Carousel
+
+@charset "UTF-8";
+
+.paragraph--type--carousel {
+  .content {
+    position: relative;
+  }
+}
+
+.slide__media {
+  figure, figure:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.slide__caption {
+  padding: 0;
+  font-size: 0.875em;
+  .slide__title {
+    margin: 0;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  padding-bottom: 2em;
+}
+
+.slick-list {
+  .slick-loading & {}
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  border: 0;
+  width: 2.75em;
+  height: 2.75em;
+  text-indent: 99em;
+  overflow: hidden;
+  color: $yellow;
+  background: transparent;
+  z-index: +1;
+}
+
+.slick-prev {
+  left: 0;
+  &:before {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    display: block;
+    content: "";
+    border-top:    0.875em solid transparent;
+    border-right:  1.375em solid currentColor;
+    border-bottom: 0.875em solid transparent;
+    border-left:   0 solid transparent;
+  }
+}
+
+.slick-next {
+  right: 0;
+  &:before {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    display: block;
+    content: "";
+    border-top:    0.875em solid transparent;
+    border-right:  0 solid transparent;
+    border-bottom: 0.875em solid transparent;
+    border-left:   1.375em solid currentColor;
+  }
+}
+
+ul.slick-dots {
+  margin: 0;
+  li {
+    margin: 0;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  li {
+    display: inline-block;
+    box-sizing: border-box;
+    button {
+      position: relative;
+      border: 0;
+      text-indent: 99em;
+      overflow: hidden;
+      width: 2.75em;
+      height: 2.75em;
+      background: transparent;
+      &:hover, &:focus {
+        outline: 0;
+        border: 0;
+      }
+      &:before {
+        position: absolute;
+        top: .875em;
+        left: 0.8753em;
+        display: block;
+        content: '';
+        background: $gray-medium;
+        border-radius: 50%;
+        height: 1em;
+        width: 1em;
+      }
+    }
+    &.slick-active button:before {
+      background: $black;
+    }
+  }
+  li + li {
+    margin-left: 0.5em;
+  }
+}

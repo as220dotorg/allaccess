@@ -1,0 +1,63 @@
+section.donate-form {
+  padding-top: 0;
+  padding-bottom: 0;
+  .container::before {
+    display: block;
+    content: '';
+    height: 1.5em;
+    background: repeating-linear-gradient(
+      -65deg,
+      transparent,
+      transparent 12px,
+      black 12px,
+      black 24px
+    );
+  }
+}
+
+
+div.ngp-form {
+  max-width: none;
+  section {
+    background: transparent;
+  }
+  // header {
+  //   padding: 0;
+  // }
+  // .at-fieldset {
+  //   padding: 0;
+  // }
+  // .at-row {
+  //   margin: 0 0;
+  // }
+  .at-title {
+    display: none;
+  }
+  .at-text small {
+    color: $berry;
+  }
+  .at-text,
+  .at-select,
+  .at-check span {
+    color: $black;
+  }
+}
+
+
+.donate-form .container {
+  background-color: $yellow;
+  .column:first-child {
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    p {
+      margin-top: 1.35em;
+    }
+  }
+  @include tablet {
+    .column {
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+  }
+}

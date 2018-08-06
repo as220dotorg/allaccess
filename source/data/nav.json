@@ -1,0 +1,84 @@
+{
+  "mainnav": [
+    {
+      "label": "All Access Campaign",
+      "href": "index.html",
+      "dir": "about"
+    },
+    {
+      "label": "Empire Street Programs",
+      "href": "programs.html",
+      "dir": "program"
+    },
+    {
+      "label": "Donate",
+      "href": "donate.html",
+      "dir": "donate"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "dir": "contact"
+    }
+  ],
+  "aboutnav": [
+    {
+      "label": "About AS220",
+      "href": "about.html"
+    },
+    {
+      "label": "Empire Street",
+      "href": "about-empire-street.html"
+    },
+    {
+      "label": "Investment",
+      "href": "about-investment.html"
+    },
+    {
+      "label": "Improvements",
+      "href": "about-improvements.html"
+    },
+    {
+      "label": "Case Statement",
+      "href": "https://as220.org/wp-content/uploads/2018/05/All-Access-Case-Statement5.pdf"
+    }
+  ],
+  "programnav": [
+    {
+      "label": "Empire Street Programs",
+      "href": "programs.html"
+    },
+    {
+      "label": "AS220 Galleries",
+      "href": "programs-galleries.html"
+    },
+    {
+      "label": "Darkroom",
+      "href": "programs-darkroom.html"
+    },
+    {
+      "label": "Black Box Theatre",
+      "href": "programs-black-box.html"
+    },
+    {
+      "label": "Main Stage",
+      "href": "programs-main-stage.html"
+    },
+    {
+      "label": "Dance Studio",
+      "href": "programs-dance-studio.html"
+    },
+    {
+      "label": "Foo(d) & Bar",
+      "href": "programs-food-bar.html"
+    },
+    {
+      "label": "AS220 Youth",
+      "href": "programs-youth.html"
+    },
+    {
+      "label": "Live/Work Studios",
+      "href": "programs-live-work.html"
+    }
+  ]
+}

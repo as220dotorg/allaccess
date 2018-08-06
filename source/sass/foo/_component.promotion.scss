@@ -1,0 +1,37 @@
+// Promotion
+//
+// Customize Bulma promotion component:
+//
+// Weight: 2
+//
+// Styleguide: Component.Promotion
+
+
+.promotion {
+  .hero-body.is-dark {
+    color: white;
+    background: black;
+  }
+  .hero-body {
+    padding: 0;
+    .columns {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    .promotion-description {
+      // padding: 1em;
+    }
+    .promotion-image::after {
+      content: '';
+      display: block;
+      padding-bottom: 50%;
+    }
+  }
+  @include tablet {
+    .promotion-image {
+      order: 2;
+    }
+  }
+}

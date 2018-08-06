@@ -1,0 +1,52 @@
+// Calendar
+//
+// Customize Bulma calendar component:
+//
+// Weight: 2
+//
+// Styleguide: Component.Calendar
+
+.calendar {
+  .calendar-nav {
+    color: black;
+    background: white;
+  }
+  .calendar-header {
+    color: black;
+    background: white;
+  }
+}
+
+
+
+.calendar-nav-month {
+  flex: 1;
+  text-align: left;
+}
+
+.calendar-nav-left {
+  // order: 2;
+  width: 3em;
+}
+.calendar-nav-right {
+  width: 3em;
+}
+
+.calendar .calendar-body .calendar-date {
+  // background: pink;
+  position: relative;
+}
+.calendar .calendar-body .calendar-date::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  background: red;
+  height: 3px;
+}
+
+.calendar .calendar-body .calendar-date .date-item {
+  align-self: flex-start;
+}
